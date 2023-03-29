@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>&#x67E5;&#x770B;&#x62A5;&#x544A; - ReportView</title>
+    <link rel="stylesheet" href="/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/css/site.css" />
+
+    <meta http-equiv=X-UA-Compatible content=IE=EmulateIE7>
+
+    <!--[if lt IE 7]>
+    <script src="/lib/IE7.js" type="text/javascript"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <header style="width:100%; position:fixed;top:0px;">
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+            <div class="container">
+                <div class="div_brand">
+
+                    <a class="a.navbar-brand" href="/Home">
+                        <img src="/iocn.ico" />
+                        <p class="p_a">查看报告</p>
+                    </a>
+                    <a href="/ReportView/DownAux">下载插件</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <main role="main" class="pb-3">
+
+            <div class="text-center">
+                <h1 class="display-4">查看报告</h1>
+                <p>输入申请单号，住院号，门诊号，流水号</p>
+                <div class="headercs">
+                    <input type="text" id="searchtext" value="123" />
+                    <button class="btn btn-primary btn-sm" id="btnsear">查询</button>
+                </div>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>
+                                病人姓名
+                            </th>
+                            <th>
+                                检查时间
+                            </th>
+                            <th>
+                                检查医生
+                            </th>
+                            <th>
+                                查看报告
+                            </th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                &#x6D4B;&#x98D2;
+                            </td>
+                            <td>
+                                2023/3/20 16:03:31
+                            </td>
+                            <td>
+                                &#x4E07;&#x5927;&#x7237;
+                            </td>
+                            <td>
+
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                &#x6D4B;&#x8BD5;
+                            </td>
+                            <td>
+                                2023/3/28 11:58:08
+                            </td>
+                            <td>
+
+                            </td>
+                            <td>
+
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                &#x963F;&#x745F;&#x4E1C;
+                            </td>
+                            <td>
+                                2023/3/28 11:58:08
+                            </td>
+                            <td>
+                                &#x4E07;&#x5927;&#x7237;
+                            </td>
+                            <td>
+                                <a class="btn btn-outline-success btn-sm"
+                                    href="/ReportView/Privacy?lsh=2023032811465525">查看</a>
+                                <a class="btn btn-outline-success btn-sm"
+                                    href="/ReportView/ImageView?lsh=2023032811465525">图像</a>
+                                <a href="#"
+                                    onclick="OpenAux(&#x27;http://192.168.0.114:9009/&#x27;,&#x27;2023031716033190&#x27;)"
+                                    class="btn btn-outline-success btn-sm">查看Dicom图像</a>
+
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                &#x963F;&#x745F;&#x4E1C;
+                            </td>
+                            <td>
+                                2023/3/28 11:58:08
+                            </td>
+                            <td>
+
+                            </td>
+                            <td>
+
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                &#x8BB8;&#x891A;
+                            </td>
+                            <td>
+                                2023/3/28 16:34:39
+                            </td>
+                            <td>
+                                &#x4E07;&#x5927;&#x7237;
+                            </td>
+                            <td>
+
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                &#x8BB8;&#x891A;
+                            </td>
+                            <td>
+                                2023/3/28 16:34:51
+                            </td>
+                            <td>
+                                &#x4E07;&#x5927;&#x7237;
+                            </td>
+                            <td>
+
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                &#x65B0;&#x4E1C;&#x65B9;
+                            </td>
+                            <td>
+                                2023/3/28 11:58:08
+                            </td>
+                            <td>
+
+                            </td>
+                            <td>
+
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                &#x65B0;&#x4E1C;&#x65B9;
+                            </td>
+                            <td>
+                                2023/3/28 15:08:29
+                            </td>
+                            <td>
+                                &#x4E07;&#x5927;&#x7237;
+                            </td>
+                            <td>
+
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                &#x6697;&#x6740;
+                            </td>
+                            <td>
+                                2023/3/28 13:50:04
+                            </td>
+                            <td>
+                                &#x4E07;&#x5927;&#x7237;
+                            </td>
+                            <td>
+                                <a class="btn btn-outline-success btn-sm"
+                                    href="/ReportView/Privacy?lsh=2023032811472344">查看</a>
+                                <a class="btn btn-outline-success btn-sm"
+                                    href="/ReportView/ImageView?lsh=2023032811472344">图像</a>
+                                <a href="#"
+                                    onclick="OpenAux(&#x27;http://192.168.0.114:9009/&#x27;,&#x27;2023031716033190&#x27;)"
+                                    class="btn btn-outline-success btn-sm">查看Dicom图像</a>
+
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                &#x6309;&#x65F6;
+                            </td>
+                            <td>
+                                2023/3/28 13:46:28
+                            </td>
+                            <td>
+                                &#x4E07;&#x5927;&#x7237;
+                            </td>
+                            <td>
+                                <a class="btn btn-outline-success btn-sm"
+                                    href="/ReportView/Privacy?lsh=2023032811474124">查看</a>
+                                <a class="btn btn-outline-success btn-sm"
+                                    href="/ReportView/ImageView?lsh=2023032811474124">图像</a>
+                                <a href="#"
+                                    onclick="OpenAux(&#x27;http://192.168.0.114:9009/&#x27;,&#x27;2023031716033190&#x27;)"
+                                    class="btn btn-outline-success btn-sm">查看Dicom图像</a>
+
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                &#x7684;
+                            </td>
+                            <td>
+                                2023/3/28 13:48:34
+                            </td>
+                            <td>
+                                &#x4E07;&#x5927;&#x7237;
+                            </td>
+                            <td>
+                                <a class="btn btn-outline-success btn-sm"
+                                    href="/ReportView/Privacy?lsh=2023032811492257">查看</a>
+                                <a class="btn btn-outline-success btn-sm"
+                                    href="/ReportView/ImageView?lsh=2023032811492257">图像</a>
+                                <a href="#"
+                                    onclick="OpenAux(&#x27;http://192.168.0.114:9009/&#x27;,&#x27;2023031716033190&#x27;)"
+                                    class="btn btn-outline-success btn-sm">查看Dicom图像</a>
+
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                &#x6D88;&#x6BD2;
+                            </td>
+                            <td>
+                                2023/3/28 13:50:28
+                            </td>
+                            <td>
+                                &#x4E07;&#x5927;&#x7237;
+                            </td>
+                            <td>
+
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+
+        </main>
+    </div>
+
+    <footer class="border-top footer text-muted" style="position:fixed;bottom:0px;background:#FFF;">
+        <div class="container">
+            &copy; 2023 - 深蓝鸟科技 -
+        </div>
+    </footer>
+    <script src="/lib/jquery/dist/jquery.min.js"></script>
+    <script src="/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="/js/site.js?v=_DlZTLrxWJ4kvy0HRPn066NsRLagguptxhTXfYjKoVI"></script>
+</body>
+
+</html>
