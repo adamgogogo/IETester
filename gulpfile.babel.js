@@ -52,7 +52,7 @@ function www(done) {
     browserSync.init({
       server: {
         baseDir: "./html/",
-        directory: false,
+        directory: true,
         index: "index.html",
       },
       port: 3567,
