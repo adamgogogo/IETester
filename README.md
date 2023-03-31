@@ -34,7 +34,12 @@ HTML header 添加
 <![endif]–>
 解决PNG显示问题
 
-## docker
+## test 
+http://192.168.43.19:8000/ietest/imageView.html
+
+vbox + XP 3p
+
+## docker[没用]
 
 https://hub.docker.com/_/microsoft-windows
 

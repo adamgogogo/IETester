@@ -1,8 +1,4 @@
-﻿// Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
-// for details on configuring this project to bundle and minify static web assets.
-
-// Write your JavaScript code.
-
+﻿
 if (window.NodeList && !NodeList.prototype.forEach) {
     NodeList.prototype.forEach = function (callback, thisArg) {
         thisArg = thisArg || window;
@@ -40,22 +36,6 @@ function onclickbtnsear() {
 
 function onclickimgItem(e) {
     // console.log("imgItems==this", this);
-    // var id = e;
-    // e.forEach(function(v,k){
-    //     alert(k);
-    // });
-    // alert(id);
-
-    // var img = document.images["imgItem" + (i + 1)].src;
-
-    // console.log("imgItems==id", id);
-    // var MaxImg = document.getElementById("MaxImg");
-    // // MaxImg.src = id;
-    // MaxImg.setAttribute('src', id);
-    // var MaxBox = getElementsByClassName("MaxBox")[0];
-    // MaxBox.style.display = 'block';
-    // var MaxImg = document.getElementById("MaxImg");
-    // MaxImg.style.display = 'block';
 }
 
 function onclickimgItem2(src) {
@@ -65,6 +45,9 @@ function onclickimgItem2(src) {
     var MaxBox = getElementsByClassName("MaxBox")[0];
     MaxBox.style.display = 'block';
     MaxImg.style.display = 'block';
+
+    var ImageShow = getElementsByClassName("ImageShow")[0];
+    ImageShow.style.display = "none";
 }
 
 function onclickMaxBox(){
@@ -72,6 +55,9 @@ function onclickMaxBox(){
     MaxBox.style.display = 'none';
     var MaxImg = document.getElementById("MaxImg");
     MaxImg.style.display = 'none';
+
+    var ImageShow = getElementsByClassName("ImageShow")[0];
+    ImageShow.style.display = "block";
 }
 
 function onclickDownloadAux(){
@@ -101,36 +87,7 @@ if (getElementsByClassName("MaxBox")) {
 if (document.getElementById("DownloadAux")) {
     myListenEvt(document.getElementById("DownloadAux"), onclickDownloadAux);
 }
-    
 
-
-// $(function () {
-
-//     $("#btnsear").click(function () {
-//         var id = $("#searchtext").val();
-//         window.location.href = "/ReportView/index?id=" + id;
-//     });
-
-//     $(".imgItem").click(function () {
-//         var id = $(this).attr("src");
-//         $("#MaxImg").attr("src", id);
-//         $(".MaxBox").css("display", "block");
-//         $("#MaxImg").css("display", "block");
-//         console.log(id);
-//     });
-//     $(".MaxBox").click(function () {
-//         $(this).css("display", "none");
-//         $("#MaxImg").css("display", "none");
-//         console.log("关闭");
-//     });
-
-//     $("#DownloadAux").click(function () {
-//         window.location.href = "http://192.168.0.242:9009/MCEXE.zip";
-//     })
-
-    
-
-// });
 function OpenAux(url, lsh) {
     window.location.href = "MicroDicomStart://" + url + "," + lsh;
     //console.log(url, lsh);
